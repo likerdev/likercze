@@ -1,3 +1,11 @@
+body {
+    background-color: black;
+    font-family: 'Zalando Sans Expanded', sans-serif;
+    align-content: center;
+}
+p, h1, h2, h3, h4, h5, h6, li, ul, th, td, tr, header {
+    color: white;
+}
 .table-container {
         display: flex;
         justify-content: space-between;
@@ -6,12 +14,11 @@
 }
 table {
     border-collapse: collapse;
-    width: 50%;
-    margin: 10px;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 th, td {
-    border: 1px solid black;
+    border: 1px solid white;
     padding: 8px;
     text-align: center;
+    color: white;
 }

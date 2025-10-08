@@ -17,6 +17,7 @@ body {
   opacity: 0.5;
   filter: blur(5px);
   transform: rotate(180deg);
+  animation: moveBackground1 15s ease-in-out infinite alternate;
 }
 .bg2 {
   position: fixed;
@@ -31,6 +32,7 @@ body {
   z-index: -1;
   opacity: 0.7;
   filter: blur(5px);
+  animation: moveBackground2 15s ease-in-out infinite alternate;
 }
 p, h1, h2, h3, h4, h5, h6, li, ul, th, td, tr, header, footer {
     color: white;
@@ -53,4 +55,28 @@ th, td {
     padding: 8px;
     text-align: center;
     color: white;
+}
+
+@keyframes moveBackground1 {
+  0% {
+    background-position: center top;
+  }
+  50% {
+    background-position: center 20px;
+  }
+  100% {
+    background-position: center top;
+  }
+}
+
+@keyframes moveBackground2 {
+  0% {
+    background-position: center bottom;
+  }
+  50% {
+    background-position: center 20px;
+  }
+  100% {
+    background-position: center bottom;
+  }
 }
